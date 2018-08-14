@@ -3,6 +3,7 @@ article.existingTweet {
   border-radius: 5px;
   background-color: white;
   opacity: 0.7;
+  margin-bottom: 30px;
 }
 
 article.existingTweet:hover {
@@ -18,7 +19,7 @@ article.existingTweet header {
   padding-left: 10px;
 }
 
-article.existingTweet header h3{
+.username {
   float: left;
 }
 
@@ -28,7 +29,7 @@ article.existingTweet header p {
 }
 
 article.existingTweet p {
-  height: 80px;
+  height: 40px;
   padding-left: 10px;
 }
 
