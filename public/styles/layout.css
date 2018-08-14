@@ -29,5 +29,12 @@ body {
  width: 450px;
  margin: auto;
  background-color: white;
- padding: 150px 2em 80px 2em;
+ padding: 150px 2em 0 2em;
+}
+
+.container2 {
+ width: 450px;
+ margin: auto;
+ background-color: white;
+ padding: 30px 2em 70px 2em;
 }

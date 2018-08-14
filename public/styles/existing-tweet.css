@@ -1,0 +1,57 @@
+article.existingTweet {
+  border: 1px solid #b1acac;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+article.existingTweet:hover {
+  border: 1px solid black;
+  opacity: 1;
+}
+
+
+article.existingTweet header {
+  background-color: #d2cfcf;
+  height: 80px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+article.existingTweet header h3{
+  float: left;
+}
+
+article.existingTweet header p {
+  float: right;
+  padding-right: 8px;
+}
+
+article.existingTweet p {
+  height: 80px;
+  padding-left: 10px;
+}
+
+article.existingTweet footer {
+  border-top: 1px solid #d2cfcf;;
+  height: 20px;
+  padding-bottom: 40px;
+  font-size: 15px;
+}
+
+article.existingTweet footer p.time{
+  float: left;
+}
+
+
+.fas {
+  padding-top: 10px;
+  padding-right: 10px;
+  float: right;
+  height: 20px;
+  opacity: 0;
+}
+
+article.existingTweet:hover .fas {
+  opacity: 1;
+}
