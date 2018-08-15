@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
 // call the tweet textbox element
-  const tweetTextbox = document.querySelector('#tweetTextbox');
+  const tweetTextbox = $('#tweetTextbox');
 
 
 // total tweet character limit, available to be changed
@@ -12,15 +12,17 @@ $(document).ready(function() {
 
 // function for changing counter number and color based on positive or negative value
   const charCount = function() {
-    let newCount = counterNumber - this.value.length;
-    $(this).parent().children("span").text(newCount);
+    $(".textResponse").css("display", "none")                     // clears out your error message
+    let newCount = counterNumber - $(this).val().length;
+    let $counterBox = $(this).parent().children("span")
+    $counterBox.text(newCount);
     if (newCount <= 0) {
-      $(this).parent().children("span").css("color", "red");
+      $counterBox.css("color", "red");
     } else {
-      $(this).parent().children("span").css("color", "black");
+      $counterBox.css("color", "black");
     }
   }
 
-  tweetTextbox.addEventListener("keyup", charCount);
+  tweetTextbox.on("input", charCount);
 });
 

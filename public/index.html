@@ -34,28 +34,37 @@
     <!-- Character Counter-->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+    <!-- Submitting Forms Asynchronously -->
+    <script type="text/javascript" src="/scripts/submit-async.js"></script>
 
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png">
-      <span class="header">Tweeter</span>
+      <section>
+        <img id="birdLogo" class="left-nav" src="/images/bird.png">
+        <span class="header left-nav">Tweeter</span>
+      </section>
+      <section>
+        <button type="button" id="composeButton">Compose</button>
+      </section>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="newTweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/" enctype="application/x-www-form-urlencoded">
           <textarea id="tweetTextbox" name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <input type="submit" value="Tweet" id="postButton">
+          <label class="textResponse" id="tooMany">Too many characters! You talk too much</label>
+          <label class="textResponse" id="noChar">Do you not have anything to share? Boring</label>
           <span class="counter">140</span>
         </form>
       </section>
       <section id="tweetsContainer">
+  <!-- This is the hard-coded tweet for css designing
         <article class="existingTweet">
           <header>
             <h3 class="username">andrew hsieh</h3>
@@ -67,6 +76,7 @@
             <i class="fas fa-flag"></i>
           </footer>
         </article>
+  -->
       </section>
     </main>
   </body>
