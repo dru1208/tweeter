@@ -110,6 +110,7 @@ $(document).ready(function() {
   $("#composeButton")
     .click(function(){
       $(".newTweet").slideToggle("slow")
+      $("#tweetTextbox").focus()
     })
   loadTweets()
 });
