@@ -26,12 +26,15 @@ function createTweetElement (tweet) {
   let htmlCode = `
   <article class="existingTweet">
     <header>
+      <img src=${tweet.user.avatars.small} class="userpic">
       <h3 class="username">${tweet.user.name}</h3>
       <p>${tweet.user.handle}</p>
     </header>
     <p>${escape(tweet.content.text)}</p>
     <footer>
       <p class="time">${convertDate(tweet)} days ago</p>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-retweet"></i>
       <i class="fas fa-flag"></i>
     </footer>
   </article>`;
