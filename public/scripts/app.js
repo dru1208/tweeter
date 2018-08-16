@@ -15,7 +15,7 @@ function convertDate(tweet) {
   let createDateInMs = new Date(tweet.created_at).getTime(); //.getTime() changes to milliseconds
   let currentDateInMs = new Date(Date.now()).getTime();
   let dayinMs = 24 * 60 * 60 * 1000;
-  let timePassedInDays = Math.floor(
+  let timePassedInDays = Math.round(
     (currentDateInMs - createDateInMs) / dayinMs
   );
   return timePassedInDays;
