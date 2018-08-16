@@ -54,6 +54,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="newTweet">
+      <!-- Form for creating and submitting a new tweet -->
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/" enctype="application/x-www-form-urlencoded">
           <textarea id="tweetTextbox" name="text" placeholder="What are you humming about?"></textarea>
@@ -64,19 +65,7 @@
         </form>
       </section>
       <section id="tweetsContainer">
-  <!-- This is the hard-coded tweet for css designing
-        <article class="existingTweet">
-          <header>
-            <h3 class="username">andrew hsieh</h3>
-            <p>@drudaboombox</p>
-          </header>
-          <p>yo this is your tweet material</p>
-          <footer>
-            <p class="time">10 days ago</p>
-            <i class="fas fa-flag"></i>
-          </footer>
-        </article>
-  -->
+      <!-- Existing tweets in this section -->
       </section>
     </main>
   </body>
